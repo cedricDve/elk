@@ -73,7 +73,7 @@ services:
           
   metricbeat:
     build:
-      context: ./
+      context: metric/
       args:
         ELK_VERSION: $ELK_VERSION
     # Run as 'root' instead of 'metricbeat' (uid 1000) to allow reading
